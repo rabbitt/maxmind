@@ -15,7 +15,7 @@ $ make maxmind
 ```
 
 ### Runtime Requirements
-- GeoLite2-City.mmdb from MaxMind
+- [GeoLite2-City.mmdb](https://dev.maxmind.com/geoip/geoip2/geolite2/#Downloads) from MaxMind
 
 ### Usage
 
