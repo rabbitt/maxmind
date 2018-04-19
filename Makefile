@@ -6,8 +6,8 @@ FORMAT_FILES ?= $(find . -name '*.go' -a -not -regex '.+/vendor/.+')
 
 default: maxmind
 
-maxmind: prep
-	@go build -i -o bin/maxmind .
+maxmind:
+	@govendor build -i -o bin/maxmind
 
 # vet runs the Go source code static analysis tool `vet` to find
 # any common errors.
