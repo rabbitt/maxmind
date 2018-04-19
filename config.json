@@ -1,0 +1,6 @@
+{
+	"server.ip": "127.0.0.1",
+	"server.port": 8080,
+  "cache.ttl": 3600,
+	"database.file": "/var/lib/maxminddb/GeoLite2-City.mmdb",
+}

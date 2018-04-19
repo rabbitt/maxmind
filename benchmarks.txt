@@ -1,0 +1,40 @@
+NO CACHE (on 2017 Macbook Pro):
+---------
+
+$ siege -c 10 -b -r 100000 http://127.0.0.1:8000/ip/123.123.123.123
+** SIEGE 3.0.8
+** Preparing 10 concurrent users for battle.
+The server is now under siege..      done.
+
+Transactions:                1000000 hits
+Availability:                 100.00 %
+Elapsed time:                  22.75 secs
+Data transferred:             445.37 MB
+Response time:                  0.00 secs
+Transaction rate:           43956.04 trans/sec
+Throughput:                    19.58 MB/sec
+Concurrency:                    9.85
+Successful transactions:     1000000
+Failed transactions:               0
+Longest transaction:            0.04
+Shortest transaction:           0.00
+
+WITH CACHE (on 2017 Macbook Pro):
+-----------
+$ siege -c 10 -b -r 100000 http://127.0.0.1:8000/ip/123.123.123.123
+** SIEGE 3.0.8
+** Preparing 10 concurrent users for battle.
+The server is now under siege..      done.
+
+Transactions:              1000000 hits
+Availability:               100.00 %
+Elapsed time:                15.14 secs
+Data transferred:           445.37 MB
+Response time:                0.00 secs
+Transaction rate:         66050.20 trans/sec
+Throughput:                  29.42 MB/sec
+Concurrency:                  9.75
+Successful transactions:   1000000
+Failed transactions:             0
+Longest transaction:          0.04
+Shortest transaction:         0.00
