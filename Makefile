@@ -1,5 +1,5 @@
 SHELL = bash
-TOOLING ?= golang.org/x/tools/cmd/goimports github.com/kardianos/govendor
+TOOLING ?= golang.org/x/tools/cmd/goimports github.com/kardianos/govendor github.com/pquerna/ffjson
 FORMAT_FILES ?= $(find . -name '*.go' -a -not -regex '.+/vendor/.+')
 
 .ONESHELL:
@@ -25,9 +25,10 @@ prep: format-check
 # bootstrap the build by downloading additional tools
 bootstrap:
 	@for tool in $(TOOLING) ; do
-		echo "Installing/Updating $$tool"
+		echo "==> Installing/Updating $$tool"
 		go get -u $$tool
 	done
+	echo "==> Syncing vendor directory..."
 	govendor sync
 
 format:
