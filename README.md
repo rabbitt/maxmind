@@ -8,7 +8,7 @@ A GeoIP server and lookup tool written in GO, and pulling ideas from:
 
 ### Install  
 ```bash
-$ go ge t -u github.com/rabbitt/maxmind
+$ go get -u github.com/rabbitt/maxmind
 $ cd $GOPATH/src/github.com/rabbitt/maxmind
 $ make bootstrap
 $ make maxmind
