@@ -1,10 +1,12 @@
 # maxmind
-A GeoIP server and lookup tool written in GO, and pulling ideas from:
+A MaxMind® GeoIP microservice and lookup tool written in GO, and pulling ideas from:
 
 - https://github.com/klauspost/geoip-service
 - https://github.com/twisted1919/geoip-go
 - https://github.com/oschwald/geoip2-golang    
 - https://github.com/mitchellh/cli
+
+Note: this project is not affiliated with MaxMind, and only provides a tool to facilitate data lookup from maxmind specific geoip databases.
 
 ### Install  
 ```bash
